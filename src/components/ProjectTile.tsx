@@ -1,5 +1,6 @@
 import { ProjectTileProps } from "../utilities/Interfaces";
 import { Strings } from "../utilities/Strings";
+import ProjectButton from "./ProjectButton";
 
 
 export default function ProjectTile({title, summary, image_src, image_alt}: ProjectTileProps) {
@@ -17,9 +18,21 @@ export default function ProjectTile({title, summary, image_src, image_alt}: Proj
                     <h4 className="vollkorn-text">{summary}</h4>
                 </div>
                 <div className="portfolio-tile-controls">
-                    <div className="portfolio-button"><a href="#" className="link tooling-text">{Strings.portfolio.project_tile.case}<i className="portfolio-button-icon bi bi-pen-fill"></i></a></div>
+                    <ProjectButton 
+                        text={Strings.portfolio.project_tile.case}
+                        url={"#"}
+                    />
+                    <ProjectButton 
+                        text={Strings.portfolio.project_tile.repo}
+                        url={"#"}
+                    />
+                    <ProjectButton 
+                        text={Strings.portfolio.project_tile.demo}
+                        url={"#"}
+                    />
+                    {/* <div className="portfolio-button"><a href="#" className="link tooling-text">{Strings.portfolio.project_tile.case}<i className="portfolio-button-icon bi bi-pen-fill"></i></a></div>
                     <div className="portfolio-button"><a href="#" className="link tooling-text">{Strings.portfolio.project_tile.repo}<i className="portfolio-button-icon bi bi-github"></i></a></div>
-                    <div className="portfolio-button"><a href="#" className="link tooling-text">{Strings.portfolio.project_tile.demo}<i className="portfolio-button-icon bi bi-play-circle-fill"></i></a></div>
+                    <div className="portfolio-button"><a href="#" className="link tooling-text">{Strings.portfolio.project_tile.demo}<i className="portfolio-button-icon bi bi-play-circle-fill"></i></a></div> */}
                 </div>
             </div>
         </div>
