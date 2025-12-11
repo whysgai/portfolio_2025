@@ -36,6 +36,5 @@ export default function ProjectButton ({type, url}: ProjectButtonProps) {
                 <i className={`portfolio-button-icon bi ${icon}`}></i>
             </a>
         </div>
-    )
-
-}
+    );
+};

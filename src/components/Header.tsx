@@ -14,5 +14,5 @@ export default function Header({changeView}: HeaderProps) {
                 </div>     
             </div>
         </header>
-    )
-}
+    );
+};

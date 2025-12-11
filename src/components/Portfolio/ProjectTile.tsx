@@ -52,5 +52,5 @@ export default function ProjectTile({title, summary, image_src, image_alt, case_
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
