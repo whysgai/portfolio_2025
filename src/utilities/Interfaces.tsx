@@ -1,4 +1,8 @@
-import { ProjectTileButtonTypes } from "./Enums"
+import { ProjectTileButtonTypes, View } from "./Enums"
+
+interface HeaderProps {
+    changeView: (newView: View) => void;
+}
 
 interface ProjectTileProps {
     title: string,
@@ -18,6 +22,7 @@ interface ProjectButtonProps {
 
 
 export type {
+    HeaderProps,
     ProjectTileProps,
     ProjectButtonProps,
 }
