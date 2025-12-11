@@ -1,3 +1,4 @@
+import { ProjectTileButtonTypes } from "../utilities/Enums";
 import { ProjectTileProps } from "../utilities/Interfaces";
 import { Strings } from "../utilities/Strings";
 import ProjectButton from "./ProjectButton";
@@ -21,7 +22,7 @@ export default function ProjectTile({title, summary, image_src, image_alt, case_
                     {
                         case_url ?
                             <ProjectButton 
-                                text={Strings.portfolio.project_tile.case}
+                                type={ProjectTileButtonTypes.Case}
                                 url={case_url}
                             />
                             :
@@ -30,7 +31,7 @@ export default function ProjectTile({title, summary, image_src, image_alt, case_
                     {
                         repo_url ?
                             <ProjectButton 
-                                text={Strings.portfolio.project_tile.repo}
+                                type={ProjectTileButtonTypes.Repo}
                                 url={repo_url}
                             />
                             :
@@ -39,7 +40,7 @@ export default function ProjectTile({title, summary, image_src, image_alt, case_
                     {
                         demo_url ?
                             <ProjectButton 
-                                text={Strings.portfolio.project_tile.demo}
+                                type={ProjectTileButtonTypes.Demo}
                                 url={demo_url}
                             />
                             :

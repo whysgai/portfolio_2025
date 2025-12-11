@@ -1,3 +1,5 @@
+import { ProjectTileButtonTypes } from "./Enums"
+
 interface ProjectTileProps {
     title: string,
     summary: string,
@@ -9,11 +11,13 @@ interface ProjectTileProps {
 }
 
 interface ProjectButtonProps {
-    text: string,
+    type: ProjectTileButtonTypes,
     url: string
 }
 
-export type{
+
+
+export type {
     ProjectTileProps,
     ProjectButtonProps,
 }
