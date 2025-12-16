@@ -46,13 +46,11 @@ interface PositionType {
 
 interface SkillsetType {
     skillset: string,
-    skills: SkillType[],
+    skills: {
+        title: string, 
+        icon: string,
+    }[],
 };
-
-interface SkillType {
-    title: string, 
-    icon: string,
-}
 
 export type {
     HeaderProps,

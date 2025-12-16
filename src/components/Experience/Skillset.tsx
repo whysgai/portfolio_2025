@@ -13,13 +13,6 @@ export default function Skillset ({skillset}: SkillsetProps) {
                         )
                     })
                 }
-                {/* <li className="montserrat-regular">HTML</li>
-                <li className="montserrat-regular">CSS</li>
-                <li className="montserrat-regular">JavaScript</li>
-                <li className="montserrat-regular">TypeScript</li>
-                <li className="montserrat-regular">Java</li>
-                <li className="montserrat-regular">Python</li>
-                <li className="montserrat-regular">SQL</li> */}
             </ul>
         </div>
     );
