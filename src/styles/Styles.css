@@ -1,0 +1,204 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:wght@300&family=Poiret+One&family=Vollkorn+SC:wght@400;600;700;900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link:hover,
+.link:focus {
+    color:#6A3BD5;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+.header-name {
+    color: black;
+    text-decoration: none;
+    border-bottom: thin solid black;
+    font-size: 20px;
+}
+
+.header-name:hover,
+.header-name:focus {
+    border-bottom: thin solid #6A3BD5;
+}
+
+.header-middle-r {
+    color: #6A3BD5;
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.header-nav-button {
+    border: thin solid black;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.header-nav-button:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+.header-nav-button:hover {
+    transform: scale(1.15) perspective(1px);
+    background: white;
+    border: thin solid black;
+}
+
+.nav-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    list-style-type: none;
+    background-color: white;
+    border: thin solid black;
+    padding: 0;
+}
+
+.header-nav-button:hover > .nav-dropdown,
+.header-nav-button:focus-within > .nav-dropdown,
+.nav-dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.nav-dropdown div {
+    width: 100%;
+}
+
+.nav-dropdown a { 
+    clear: both;
+    width: 500px;   
+    color: black;
+    text-decoration: none;
+    border-bottom: thin solid black;
+    padding: 7.5px 15px;
+}
+
+.nav-dropdown li:nth-last-child(1) a{ 
+    border-bottom: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 100px 0;
+}
+
+.footer > span {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-tiles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.contact-icon {
+    font-size: 32px;
+    color: black;
+    border: thin solid black;
+    padding: 10px;
+    background: white;
+}
+
+.contact-icon:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+
+.contact-icon:hover { 
+    transform: scale(1.15) perspective(1px);
+    border-left: thin solid black;
+    border-right: thin solid black;
+}
+
+.container {
+    max-width: 80em;
+    width: 100%;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: solid black 1px;
+}
+
+.poiret-one-regular {
+    font-family: "Poiret One", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.tooling-text {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.title-text {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.subtitle-text {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.vollkorn-sc {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.vollkorn-text {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

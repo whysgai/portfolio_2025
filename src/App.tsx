@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import logo from './assets/logo.svg';
 import Header from './components/Header'
 import Portfolio from './components/Portfolio/Portfolio'
 import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import './styles/App.css';
+import './styles/Styles.css'
 import { View } from './utilities/Enums';
 import Footer from './components/Footer';
 
