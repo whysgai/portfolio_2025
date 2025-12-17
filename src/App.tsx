@@ -6,7 +6,8 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import './styles/App.css';
-import './styles/Styles.css'
+import './styles/Styles.css';
+import './styles/Portfolio.css';
 import { View } from './utilities/Enums';
 import Footer from './components/Footer';
 
