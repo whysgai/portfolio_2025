@@ -15,5 +15,12 @@ export const Strings = {
             demo: "Demo",
             walkthrough: "Walkthrough"
         }
-    }
+    },
+    footer: {
+        heading: "Get in touch",
+        subheading: "Drop me a line&mdash;I'm always happy to talk.",
+        email_label: "email",
+        linkedin_label: "LinkedIn",
+        github_label: "GitHub",
+    },
 }
