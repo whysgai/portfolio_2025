@@ -1,5 +1,6 @@
-import { Experiences as ExperienceData, Skills as SkillData } from "../../data/experiences";
-import {  ExperienceType, PositionType, SkillsetType } from "../../utilities/Interfaces";
+import { Experiences as ExperienceData, Skills as SkillData, Education as EducationData } from "../../data/experiences";
+import {  EducationType, ExperienceType, PositionType, SkillsetType } from "../../utilities/Interfaces";
+import Education from "./Education";
 import Position from "./Position";
 import Skillset from "./Skillset";
 
@@ -41,19 +42,11 @@ export default function Experience () {
                 <section className="education">
                     <h1 className="title-text">Education</h1>
                         <ul>
-                            <li>
-                                <div>                                    
-                                    <h2 className="edu-title subtitle-text"><strong>Master of Science, Computer Science</strong></h2>
-                                    <span className="vollkorn-text">Northeastern University&mdash;Boston, MA &lpar;May 2022&rpar;</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>                                    
-                                    <h2 className="edu-title subtitle-text"><strong>Bachelor of Arts, English</strong></h2>
-                                    <span className="vollkorn-text">Wheaton College&mdash;Norton, MA &lpar;May 2013&rpar;</span>
-                                    <span className="vollkorn-text">Minors: Computer Science, Studio Art</span>
-                                </div>
-                            </li>
+                            {
+                                EducationData.map((education: EducationType) => {
+                                    return(<Education education={education}></Education>);
+                                })
+                            }
                         </ul>
                 </section>
             </div>

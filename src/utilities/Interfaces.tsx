@@ -30,6 +30,10 @@ interface SkillsetProps {
     skillset: SkillsetType,
 }
 
+interface EducationProps {
+    education: EducationType,
+}
+
 // TYPES
 
 interface ExperienceType {
@@ -52,13 +56,25 @@ interface SkillsetType {
     }[],
 };
 
+interface EducationType {
+    degree: string,
+    field: string,
+    institution: string,
+    city: string,
+    state: string,
+    matriculation: string,
+    graduation: string,
+}
+
 export type {
     HeaderProps,
     ProjectTileProps,
     ProjectButtonProps,
     PositionProps,
     SkillsetProps,
+    EducationProps,
     ExperienceType,
     PositionType,
     SkillsetType,
+    EducationType,
 }

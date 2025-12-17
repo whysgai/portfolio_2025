@@ -93,4 +93,24 @@ export const Skills = [
     },
 ];
 
-export const Education = [];
+export const Education = [
+    {
+        degree: "Master of Science",
+        field: "Computer Science",
+        institution: "Northeastern University",
+        city: "Boston",
+        state: "MA",
+        matriculation: "Fall 2019",
+        graduation: "Spring 2022"
+    },
+    {
+        degree: "Bachelor of Arts",
+        field: "English Literature",
+        institution: "Wheaton College",
+        city: "Norton",
+        state: "MA",
+        matriculation: "Fall 2009",
+        graduation: "Spring 2013"
+    },
+    
+];
